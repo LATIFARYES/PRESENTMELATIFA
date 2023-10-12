@@ -9,13 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text(" HELLO WORLD !")
+        
+        ZStack{
+            
+            Color.clear
+                .ignoresSafeArea()
+            
+            VStack{
+                
+                Text(" HELLO WORLD !")
                     .bold()
-                    .foregroundStyle(.blue)
+                    .foregroundStyle(.purple)
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 
-
-               
+                
+                
                 Image("LDEV")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -24,18 +32,26 @@ struct ContentView: View {
                 
                     .padding(4)
                 
-                    .background(Circle().strokeBorder(Color.purple, lineWidth: 10 ))
+                    .background(Circle().strokeBorder(Color.purple, lineWidth: 12 ))
+                
                 
                 VStack(alignment: .leading) {
-                Text(" LATIFA ").bold()
-                .font(.largeTitle
-                )
-                .foregroundStyle(.black)
-                Text("أقوى لطوف بالدنيا ")
+                    Text(" LATIFA ").bold()
+                        .font(.largeTitle)
+                        .foregroundStyle(.black)
+                    
+                    Text("أقوى لطوف بالعالم  ")
                         .bold()
-                    Text(" ♡👩🏻‍💻💸🪐🔭🕯️")
-
+                        .foregroundStyle(.black)
+                   
+                    Text("♡👩🏻‍💻💸🪐🔭🕯️")
+                        .foregroundStyle(.black)
+                    
                 }
+            }
+            
+            
+        }
     }
 }
 
